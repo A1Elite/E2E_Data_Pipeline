@@ -1,0 +1,12 @@
+# Kafka Producer/Consumer
+kafka-python==2.0.2
+
+# HTTP Requests (for API calls)
+requests==2.32.3
+
+# Environment Variables
+python-dotenv==1.0.1
+
+# PostgreSQL/Redshift connector (for Lambda function)
+# Note: Only needed for Lambda function, not used in Spark containers
+pg8000==1.31.2
