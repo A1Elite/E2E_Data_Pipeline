@@ -1,10 +1,10 @@
-# UserInsight Streaming Data Pipeline
+# E2E Streaming Data Pipeline
 
-![Architecture](readme_pic/UserInsight_Architecture.png)
+![Architecture](readme_pic/E2E_Architecture.png)
 
 ## 📊 Overview
 
-**UserInsight Streaming Data Pipeline** is an end-to-end real-time data engineering solution that demonstrates modern streaming architecture and cloud-native data processing. The pipeline continuously ingests user data from the RandomUser API, processes it in real-time using Apache Kafka and Apache Spark, stores it in AWS S3 as a data lake, and automatically loads it into AWS Redshift for analytics and visualization.
+**E2E Streaming Data Pipeline** is an end-to-end real-time data engineering solution that demonstrates modern streaming architecture and cloud-native data processing. The pipeline continuously ingests user data from the RandomUser API, processes it in real-time using Apache Kafka and Apache Spark, stores it in AWS S3 as a data lake, and automatically loads it into AWS Redshift for analytics and visualization.
 
 **🎯 [View Live Dashboard](https://lookerstudio.google.com/reporting/581cb65a-beb0-45b6-a14c-8f86a316fd18)**
 
@@ -42,7 +42,7 @@ The pipeline follows a modern Lambda Architecture pattern with the following dat
 ## 📁 Project Structure
 
 ```
-UserInsight-Streaming-Data-Pipeline/
+E2E-Streaming-Data-Pipeline/
 │
 ├── docker_kafka.yml              # Kafka broker and producer container configuration
 ├── docker_spark.yml              # Spark master and worker container configuration
@@ -58,8 +58,8 @@ UserInsight-Streaming-Data-Pipeline/
 │   └── s_entrypoints.sh          # Entrypoint script for Spark worker container
 │
 └── readme_pic/
-    ├── UserInsight_Architecture.png
-    └── UserInsight_Dashboard.png
+    ├── E2E_Architecture.png
+    └── E2E_Dashboard.png
 ```
 
 ## 🎯 Features
@@ -280,7 +280,7 @@ SELECT * FROM user_data LIMIT 10;
 
 ## 📈 Dashboard
 
-![Dashboard](readme_pic/UserInsight_Dashboard.png)
+![Dashboard](readme_pic/E2E_Dashboard.png)
 
 The Looker Studio dashboard provides insights including:
 - **User Demographics**: Gender distribution, age groups, nationality breakdown
@@ -415,7 +415,7 @@ This project is open source and available for educational purposes.
 **Mike Certon**
 
 - GitHub: [@mikecerton](https://github.com/mikecerton)
-- Project Link: [UserInsight-Streaming-Data-Pipeline](https://github.com/mikecerton/UserInsight-Streaming-Data-Pipeline)
+- Project Link: [E2E-Streaming-Data-Pipeline](https://github.com/mikecerton/E2E-Streaming-Data-Pipeline)
 
 ## 🙏 Acknowledgments
 
